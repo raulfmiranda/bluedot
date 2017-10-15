@@ -18,6 +18,6 @@ Mobile – máx 1 coluna
 * Tabelas sem bordas
 * 2 opções de paletas de cores padrão
 * Tipografia básica com fontes modernas do GoogleFonts
-* Tipografias paras as tags <h1> até <h6>
-* Menu horizontais
-* Apresentado um conteúdo web de prova de conceito
+* Tipografias paras as tags h1 até h6
+* Menus horizontais
+* Prova de conceito (bluedotPoC.html)
