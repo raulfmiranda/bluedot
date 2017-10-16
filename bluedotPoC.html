@@ -3,13 +3,52 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <title>Prova de Conceito do Framework BlueDot.css</title>
+        <title>Prova de Conceito do Framework BlueDot</title>
         <meta name="author" content="Raul Figueira Miranda">
-        <link rel="stylesheet" href="bluedot.css">
+        <link rel="stylesheet" type="text/css" href="bluedot.css">
     </head>
     <body>
         <header>
-            <a href="bluedotPoC.html"><h1>Prova de Conceito do Framework BlueDot.css</h1></a>
+            <a href="bluedotPoC.html"><h1>Prova de Conceito do Framework BlueDot</h1></a>
+            <h2>Este é apenas o subtítulo da prova de conceito do Framework CSS BlueDot.</h2>
+            <nav>
+                <ul class="menu">
+                    <li><a href="#">Início</a></li>
+                    <li><a href="#">Quem somos</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+                <div id="buscar">
+                    <form method="get" action="#">
+                        <label for="entrada-busca">Buscar</label>
+                        <input type="text" id="entrada-busca">
+                    </form>
+                </div>
+            </nav>
         </header>
+
+        <section>
+            <article>
+                <header>
+                    <h1>O melhor artigo é este aqui</h1>
+                    <p>Publicado em <time pubdate datetime="2017-10-16">16 de Outubro de 2017</time></p>
+                </header>
+                Conteúdo do artigo.
+            </article>
+        </section>
+
+        <aside>
+            <h3>Arquivos</h3>
+            <ul>
+                <li><a href="#">setembro 2017</a>></li>
+                <li><a href="#">agosto 2017</a>></li>
+                <li><a href="#">julho 2017</a>></li>
+                <li><a href="#">junho 2017</a>></li>
+            </ul>
+        </aside>
+
+        <footer>
+            <small>Copyright© <time datetime="2017-10-16">2017</time>.</small>
+        </footer>
     </body>
 </html>
