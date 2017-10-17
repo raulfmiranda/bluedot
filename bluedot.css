@@ -1,8 +1,158 @@
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
 
-/* - - - RESET - - - */
-* {margin: 0; padding: 0; font-size: 100%; border: none; outline: none; font-weight: 300; box-sizing: border-box; font-family: 'Lato', sans-serif;}
-body {background-color: #f5f5f5;}
-a {text-decoration: none;}
-ul {list-style: none;}
-img {max-width: 100%}
+/*
+    . . . RESET . . .
+
+    Pode não ser bom resetar tudo, pois o carregamento pode ficar lento. 
+    É aconselhável resetar apenas as tags necessárias.
+    box-sizing: colocar padding sem alterar o width
+*/
+
+* {
+    margin: 0; 
+    padding: 0; 
+    font-size: 100%; 
+    border: none; 
+    outline: none; 
+    font-weight: 300;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box; 
+    font-family: 'Lato', sans-serif;
+}
+body {
+    background-color: #f5f5f5;
+}
+a {
+    text-decoration: none;
+}
+ul {
+    list-style: none;
+}
+img {
+    max-width: 100%
+}
+
+/*
+    Código criado para Celular e adaptado para Desktop por meio de Media Queries (Mobile First)
+
+     . . . CONTAINER . . . 
+
+    Envolve todo o conteúdo.
+    Não precisa centralizar, pois vai pegar a tela inteira.
+    1170px: tamanho do site (desktop)
+*/
+
+.container { 
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 20px;
+}
+    @media (min-width: 1170px) {
+        .container {
+            max-width: 1170px;
+            padding: 0;
+        }
+    }
+
+/*
+    . . . LINHA . . .
+
+    margin(-5px): deve ser o mesmo espaçamento colocado na coluna.
+
+    Clear-fix: 
+        Evitar que o conteúdo dentro da linha fique maior que sua própria altura.
+        Altura da linha sempre seguirá a altura de seu conteúdo.
+        Se não fizer isso, pode dar problema quando for adicionar margin aos elementos. 
+*/    
+.row {
+    margin-left: -5px;
+    margin-left: -5px;
+}
+    .row::before,
+    .row::after {
+        content: "";
+        display: table;
+    }
+    .row::after {
+        clear: both;
+    }
+
+/*
+    . . . COLUNAS . . . 
+
+    .col: classe base para todas as colunas.
+
+    display inline-block: 
+        Ter características de elemento em bloco, porém se comportar como elemento inline (flutuar).
+        Elementos irão flutuar para a esquerda.
+        Vai substituir o float, mas com controle do vertical-align
+
+    padding (5px): deve ser o mesmo espaçamento colocado na linha.
+    
+    *zoom: 1;*display: inline;
+        Display inline-block não funciona bem no IE
+        Apenas para dar suporte a navegadores mais antigos
+
+    margin-right: -4px;
+        Para resetar margin padrão adicionada automaticamente pelo inline-block.
+*/
+
+.col {
+    display: inline-block;
+    vertical-align: top;
+    min-height: 1px;
+    padding-left: 5px;
+    padding-right: 5px;
+    width: 100%;
+    margin-right: -4px;
+    *zoom: 1;
+    *display: inline;
+}
+    /*
+        . . . DUAS COLUNAS . . .
+        Deve ficar bom apenas para telas igual ou maiores que tablet 
+    */
+    @media (min-width: 480px) {
+        .col-2 {
+            width: 50%;
+        }
+    }
+
+    /* 
+        . . . TRÊS COLUNAS . . .
+        Deve ficar bom apenas para telas do tamanho de Desktop 
+    */
+    @media (min-width: 728px) {
+        .col-3 {
+            width: 33.3333%;
+        }
+    }
+
+    /*
+        . . . SIDEBAR . . . 
+        Deve ficar bom apenas para telas do tamanho de Desktop
+    */
+    @media (min-width: 992px) {
+        .col-content {
+            width: 60%;
+        }
+
+        .col-sidebar {
+           width: 40%;
+        }
+    }
+
+
+/* USAR APENAS PARA DEMOSTRAÇÂO */
+.teste {
+    background: #f5d5fe;
+    padding: 5px;
+    text-align: center;
+    margin: 2px 0;
+    color: #fff;
+}
+.big {
+    height: 50px;
+}
