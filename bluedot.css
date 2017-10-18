@@ -49,12 +49,20 @@ img {
     margin-right: auto;
     padding: 0 20px;
 }
-    @media (min-width: 1170px) {
+    @media (min-width: 1300px) {
         .container {
-            max-width: 1170px;
+            max-width: 1300px;
             padding: 0;
         }
     }
+
+/* Opção de layout com box ou sem */
+@media (min-width: 728px) {
+    .box {
+        max-width: 728px;
+        padding: 0;
+    }
+}
 
 /*
     . . . LINHA . . .
@@ -110,31 +118,30 @@ img {
     *zoom: 1;
     *display: inline;
 }
-    /*
+    
+
+    /* 
         . . . DUAS COLUNAS . . .
-        Deve ficar bom apenas para telas igual ou maiores que tablet 
+        Permitido apenas para telas com, no mínimo, o tamanho de TABLET.
     */
-    @media (min-width: 480px) {
+    @media (min-width: 728px) {
         .col-2 {
             width: 50%;
         }
     }
 
-    /* 
-        . . . TRÊS COLUNAS . . .
-        Deve ficar bom apenas para telas do tamanho de Desktop 
+    /*
+        . . . TRÊS OU QUATRO COLUNAS E SIDEBAR . . . 
+        Permitido apenas para telas com, no mínimo, o tamanho de DESKTOP.
     */
-    @media (min-width: 728px) {
+    @media (min-width: 992px) {
         .col-3 {
             width: 33.3333%;
         }
-    }
+        .col-4 {
+            width: 25%;
+        }
 
-    /*
-        . . . SIDEBAR . . . 
-        Deve ficar bom apenas para telas do tamanho de Desktop
-    */
-    @media (min-width: 992px) {
         .col-content {
             width: 60%;
         }
@@ -144,9 +151,35 @@ img {
         }
     }
 
+/* Tipografias paras as tags h1 até h6 */
 
-/* USAR APENAS PARA DEMOSTRAÇÂO */
-.teste {
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+    margin: 2px;
+    padding: 2px;
+}
+
+h1 {
+    font-size: 24px;
+}
+h2 {
+    font-size: 18px;
+}
+h3 {
+    font-size: 16px;
+}
+h4 {
+    font-size: 13px;
+}
+h5 {
+    font-size: 11px;
+}
+h6 {
+    font-size: 9px;
+}
+
+/* Para evidenciar quadros */
+.quadro {
     background: #f5d5fe;
     padding: 5px;
     text-align: center;
@@ -155,4 +188,8 @@ img {
 }
 .big {
     height: 50px;
+}
+
+.text-center {
+    text-align: center;
 }

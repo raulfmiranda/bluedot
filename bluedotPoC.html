@@ -8,47 +8,96 @@
         <link rel="stylesheet" type="text/css" href="bluedot.css">
     </head>
     <body>
-        <header>
-            <a href="bluedotPoC.html"><h1>Prova de Conceito do Framework BlueDot</h1></a>
-            <h2>Este é apenas o subtítulo da prova de conceito do Framework CSS BlueDot.</h2>
-            <nav>
-                <ul class="menu">
-                    <li><a href="#">Início</a></li>
-                    <li><a href="#">Quem somos</a></li>
-                    <li><a href="#">Serviços</a></li>
-                    <li><a href="#">Contato</a></li>
-                </ul>
-                <div id="buscar">
-                    <form method="get" action="#">
-                        <label for="entrada-busca">Buscar</label>
-                        <input type="text" id="entrada-busca">
-                    </form>
+        <div class="container box">
+            <header>
+                <div class="row text-center">
+                    <div class="col">
+                        <a href="bluedotPoC.html"><h1>Prova de Conceito do Framework BlueDot</h1></a>
+                    </div>
                 </div>
-            </nav>
-        </header>
 
-        <section>
-            <article>
-                <header>
-                    <h1>O melhor artigo é este aqui</h1>
-                    <p>Publicado em <time pubdate datetime="2017-10-16">16 de Outubro de 2017</time></p>
-                </header>
-                Conteúdo do artigo.
-            </article>
-        </section>
+                <div class="row text-center">
+                    <div class="col">
+                        <h2>Este é apenas o subtítulo da prova de conceito do Framework CSS BlueDot.</h2>
+                    </div>
+                </div>
+                
+                <nav class="row text-center">
+                    <ul class="menu col col-2">
+                        <div class="row">
+                            <li class="col col-4"><a href="#">Início</a></li>
+                            <li class="col col-4"><a href="#">Quem somos</a></li>
+                            <li class="col col-4"><a href="#">Serviços</a></li>
+                            <li class="col col-4"><a href="#">Contato</a></li>
+                        </div>
+                    </ul>
+                    <div id="buscar" class="col col-2">
+                        <form method="get" action="#">
+                            <label for="entrada-busca">Buscar</label>
+                            <input type="text" id="entrada-busca">
+                        </form>
+                    </div>
+                </nav>
+            </header>
 
-        <aside>
-            <h3>Arquivos</h3>
-            <ul>
-                <li><a href="#">setembro 2017</a>></li>
-                <li><a href="#">agosto 2017</a>></li>
-                <li><a href="#">julho 2017</a>></li>
-                <li><a href="#">junho 2017</a>></li>
-            </ul>
-        </aside>
 
-        <footer>
-            <small>Copyright© <time datetime="2017-10-16">2017</time>.</small>
-        </footer>
+            <div class="row">
+                <div class="col">
+                    <div class="quadro">col</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-2">
+                    <div class="quadro">col col-2</div>
+                </div>
+                <div class="col col-2">
+                    <div class="quadro">col col-2</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-3">
+                    <div class="quadro">col col-3</div>
+                </div>
+                <div class="col col-3">
+                    <div class="quadro">col col-3</div>
+                </div>
+                <div class="col col-3">
+                    <div class="quadro">col col-3</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-4">
+                    <div class="quadro">col col-4</div>
+                </div>
+                <div class="col col-4">
+                    <div class="quadro">col col-4</div>
+                </div>
+                <div class="col col-4">
+                    <div class="quadro">col col-4</div>
+                </div>
+                <div class="col col-4">
+                    <div class="quadro">col col-4</div>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col col-content">
+                    <div class="quadro">col conteudo</div>
+                </div>
+                <div class="col col-sidebar">
+                    <div class="quadro">col sidebar</div>
+                </div>
+            </div>
+            
+
+            <footer class="row text-center">
+                <div class="col">
+                    <small>Copyright© <time datetime="2017-10-16">2017</time>.</small>
+                </div>
+            </footer>
+        </div>
     </body>
 </html>
