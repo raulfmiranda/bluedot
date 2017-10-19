@@ -155,27 +155,33 @@ img {
 
 h1, h2, h3, h4, h5, h6 {
     font-weight: bold;
-    margin: 2px;
-    padding: 2px;
+	font-variant: small-caps;
+    margin: 0.3125em 0; /* 5/16px */
 }
-
 h1 {
-    font-size: 24px;
+    font-size: 2em; /* 32/16px */
 }
 h2 {
-    font-size: 18px;
+    font-size: 1.5em; /* 24/16px */
 }
 h3 {
-    font-size: 16px;
+    font-size: 1.125em; /* 18/16px */
 }
 h4 {
-    font-size: 13px;
+    font-size: 1em; /* 16/16px */
 }
 h5 {
-    font-size: 11px;
+    font-size: 0.8125em; /* 13/16px */
 }
 h6 {
-    font-size: 9px;
+    font-size: 0.6875em; /* 11/16px */
+}
+
+/* Imagens e videos fluidos */
+
+img, iframe, object, embed, video {
+    height: auto;
+    max-width: 100%;
 }
 
 /* Para evidenciar quadros */
@@ -186,10 +192,23 @@ h6 {
     margin: 2px 0;
     color: #fff;
 }
-.big {
-    height: 50px;
+.bloco {
+    margin: 15px 0;
 }
 
+
+p {
+    margin: 5px 0;
+}
 .text-center {
     text-align: center;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+.media-padrao {
+    height: auto;
+    width: 125%; /* 1200/960px */
+    /* height: 95.833333%; 920/960px */
 }
