@@ -1,4 +1,7 @@
-@import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+@import url('https://fonts.googleapis.com/css?family=Corben|Nobile');
+@import url('https://fonts.googleapis.com/css?family=Allan|Cardo');
+@import url('https://fonts.googleapis.com/css?family=Dancing+Script|Josefin+Sans');
+@import url('https://fonts.googleapis.com/css?family=Arvo|PT+Sans');
 
 /*
     . . . RESET . . .
@@ -18,7 +21,10 @@
     -webkit-box-sizing: border-box;
     -moz-box-sizing: border-box;
     box-sizing: border-box; 
-    font-family: 'Lato', sans-serif;
+    font-family: 'Nobile', sans-serif;
+	/* font-family: 'Cardo', serif; */
+	/* font-family: 'Josefin Sans', sans-serif; */
+	/* font-family: 'PT Sans', sans-serif; */
 }
 body {
     background-color: #f5f5f5;
@@ -154,8 +160,11 @@ img {
 /* Tipografias paras as tags h1 até h6 */
 
 h1, h2, h3, h4, h5, h6 {
+	font-family: 'Corben', cursive;
+	/* font-family: 'Allan', cursive; */
+	/* font-family: 'Dancing Script', cursive; */
+	/* font-family: 'Arvo', serif; */
     font-weight: bold;
-	font-variant: small-caps;
     margin: 0.3125em 0; /* 5/16px */
 }
 h1 {
@@ -286,6 +295,32 @@ td {
 }
 .black-text {
     color: #000000;
+}
+
+/* Tipografia básica com fontes modernas do GoogleFonts */
+.nobile {
+	font-family: 'Nobile', sans-serif !important;
+}
+.cardo {
+	font-family: 'Cardo', serif !important;
+}
+.josefin {
+	font-family: 'Josefin Sans', sans-serif !important;
+}
+.ptsans {
+	font-family: 'PT Sans', sans-serif !important;
+}
+.corben {
+	font-family: 'Corben', cursive !important;
+}
+.allan {
+	font-family: 'Allan', cursive !important;
+}
+.dancing {
+	font-family: 'Dancing Script', cursive !important;
+}
+.arvo {
+	font-family: 'Arvo', serif !important;
 }
 
 /* Para evidenciar quadros */
