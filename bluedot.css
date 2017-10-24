@@ -334,6 +334,9 @@ td {
 }
 
 /* Menus horizontais */
+#menu {
+    margin: 5px;
+}
 #menu ul li {
     display: inline;
 }
@@ -365,4 +368,7 @@ p {
     height: auto;
     width: 125%; /* 1200/960px */
     /* height: 95.833333%; 920/960px */
+}
+a:hover {
+    color: #9e9e9e;
 }
