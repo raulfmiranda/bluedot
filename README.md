@@ -7,9 +7,9 @@ Projetos solicitados para a disciplina de Conteúdos Web Mobile pelo prof. Eduard
 ### Nome: BlueDot (bluedot.css)
 
 * 3 breakpoints para: desktop,tablet, mobile;
-* Layout de grid até 4 colunas
+* Layout de grid até 8 colunas
 ```
-Desktop – 4 colunas
+Desktop – até 8 colunas
 Tablet – máx 2 colunas
 Mobile – máx 1 coluna
 ```
